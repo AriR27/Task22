@@ -1,0 +1,22 @@
+public class Dinglemouse {
+
+  public static int[] humanYearsCatYearsDogYears(final int humanYears) {
+    int cat=0;
+    int dog=0;
+
+      if(humanYears==1) {
+        cat = cat+15;
+        dog = dog +15;
+        } 
+    else if(humanYears==2) {
+        cat = cat+9+15;
+        dog = dog +9+15;
+      }
+      else {
+        cat = cat+9+15 + (humanYears-2)*4;
+        dog = dog+9+15 + (humanYears-2)*5;
+      }
+    return new int[]{humanYears,cat,dog};
+  }
+
+}
